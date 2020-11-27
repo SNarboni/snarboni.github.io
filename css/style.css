@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
+
+header, #profil, #formations, footer{
+    background: #0475ba;
+}
+
+section{
+    padding: 40px;
+}
+
+section div{
+    width: min(600px, 100%);
+    margin: 0 auto;
+    border: 2px solid red;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gras{
+    font-weight: bolder;
+}
+
+h3{
+    color:#0475ba;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+/* HEADER */
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: none;
+    gap: 50px;
+    background:#0475ba;
+    padding: 10px;
+    height: 72px;
+}
+
+header h1 a{
+    font-size: 20px;
+    font-weight: normal;
+}
+
+header nav a{
+    font-size: 10px;
+}
+
+header nav{
+    word-spacing: 10px;
+}
+
+header a{
+    text-decoration: none;
+    color: #fff;
+}
+
+/* HEADER */
+
+/* ACCUEIL */
+
+#accueil div{
+    justify-content: space-around;
+}
+
+#accueil div article{
+    text-align: center;
+}
+
+#accueil div article h1{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+#accueil div article h3{
+    font-size: 15px;
+}
+
+#accueil div img{
+    border-radius: 100px;
+    box-shadow: 2px 2px 10px;
+    width: 150px;
+}
+
+/* ACCUEIL */
+
+/* PROFIL */
+
+#profil{
+    background:#0475ba;
+}
+
+#profil div h3{
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+#profil div ul{
+    margin-left: 30px;
+    color: #fff;
+}
+/* PROFIL */
+
+/* EXPERIENCES */
+
+#experiences div p{
+    line-height: 32px;
+}
+
+/* EXPERIENCES */
+
+/* FORMATIONS */
+
+#formations div h3, #formations div p{
+    color: #fff;
+}
+/* FORMATIONS */
+
+/* FOOTER */
+
+
+footer section div{
+    width: min(300px,100%);
+    margin: 0;
+}
+
+footer section{
+    display: flex;
+    justify-content: unset;
+    align-items: center;
+    padding: 40px 20px;
+    gap: 30px;
+}
+
+footer section div a, i{
+    color: #fff;
+}
+
+i{
+    margin-right: 5px;
+}
+/* FOOTER */
+
+@media (max-width:800px){
+
+    h3{
+        text-align: center;
+    }
+
+    nav{
+        display: none;
+    }
+
+    #accueil div{
+        flex-direction: column;
+    }
+
+    footer section{
+        flex-direction: column;
+    }
+}
